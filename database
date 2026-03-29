@@ -1,0 +1,26 @@
+use votingsystem;
+CREATE TABLE `facerec` (
+  `usernames` varchar(50) DEFAULT NULL,
+  `password` varchar(20) DEFAULT NULL,
+  `Uniquepass` varchar(50) DEFAULT NULL,
+  `Userids` varchar(50) DEFAULT NULL,
+  `Votercardnos` varchar(50) DEFAULT NULL,
+  `emails` varchar(50) DEFAULT NULL,
+  `phonenos` varchar(11) DEFAULT NULL,
+  `Adresess` varchar(50) DEFAULT NULL,
+  `LoginAuth` varchar(5) DEFAULT NULL,
+  `FaceAuth` varchar(5) DEFAULT NULL,
+  `VoteAuth` varchar(5) DEFAULT NULL,
+  `Constituency` varchar(50) NOT NULL,
+  `f_id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`f_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+
+CREATE TABLE `result` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `bjp` int(10) DEFAULT NULL,
+  `congress` int(10) DEFAULT NULL,
+  `jds` int(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
